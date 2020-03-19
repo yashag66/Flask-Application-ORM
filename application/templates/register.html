@@ -1,0 +1,27 @@
+<html>
+  <body>
+  <h3>Register</h3>
+    <form method="POST" action="/">
+        Name:
+        <input type="text" name="name" required><br/>
+        Email:
+        <input type="email" name="email" required><br/>
+        Password:
+        <input type="password" name="password" required><br/>
+        Mobile:
+        <input type="tel" name="mobileNo" pattern="[0-9]{3}[0-9]{4}[0-9]{3}"required><br/>
+
+        Profile Picture:
+        <input type="file" id="img" name="img" accept="image/*"><br/>
+
+        Address:<br/>
+        <input type="text" name="houseNo" placeholder="House No" required>
+        <input type="text" name="addressLine1"  placeholder="Address Line 1" required>
+        <input type="text" name="addressLine2" placeholder="Address Line 2"><br/>
+        <input type="text" name="city" placeholder="City" required>
+        <input type="text" name="state" placeholder="State" required>
+        <input type="text" name="pincode" placeholder="PinCode" required><br/>
+        <input type="submit" value="Register">
+    </form>
+  </body>
+</html>
