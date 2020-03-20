@@ -102,3 +102,11 @@ def welcome():
 
     return "Welcome User: " + current_user.get_name()
 
+
+@app.route("/logout")
+@login_required
+def logout():
+    """Logout User"""
+    
+    logout_user()
+    return redirect("/login")
